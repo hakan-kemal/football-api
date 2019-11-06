@@ -9,7 +9,8 @@ const Team = db.define(
       field: "team_name"
     }
   },
-  { tableName: "football_teams", timestamps: false }
+  { tableName: "football_teams" }
+  // timestamps: false
 );
 
 console.log("Connected to model.js");

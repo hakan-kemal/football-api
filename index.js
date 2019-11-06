@@ -1,4 +1,6 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+const jsonParser = bodyParser.json();
 const app = express();
 const port = process.env.PORT || 4000;
 // const db = require("./db");
@@ -9,6 +11,7 @@ app.get("/", (req, res) => {
   res.send("Hello Football API!");
 });
 
+app.use(jsonParser);
 app.use(teamRouter);
 
 app.listen(port, () => {
