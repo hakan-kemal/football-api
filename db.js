@@ -9,4 +9,6 @@ db.sync()
   .then(() => console.log("Database schema updated"))
   .catch(console.error);
 
+console.log("Connected to db.js");
+
 module.exports = db;

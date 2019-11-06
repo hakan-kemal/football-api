@@ -1,5 +1,4 @@
 const Sequelize = require("sequelize");
-
 const db = require("../db");
 
 const Team = db.define(
@@ -13,4 +12,6 @@ const Team = db.define(
   { tableName: "football_teams", timestamps: false }
 );
 
-console.log("model");
+console.log("Connected to model.js");
+
+module.exports = Team;
